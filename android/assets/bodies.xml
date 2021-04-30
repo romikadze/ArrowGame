@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- created with https://www.codeandweb.com/physicseditor -->
+<bodydef>
+
+	<body name="arrow">
+		<is_dynamic/>
+		<linear_damping>0</linear_damping>
+		<angular_damping>2</angular_damping>
+		<fixture>
+			<density>1</density>
+			<friction>0.4</friction>
+			<restitution>0.5</restitution>
+			<filter_category_bits>1</filter_category_bits>
+			<filter_mask_bits>65535</filter_mask_bits>
+			<filter_group_index>0</filter_group_index>
+			<polygon>187.0000, 104.0000, 182.0000, 106.0000, 168.0000, 105.0000, 168.0000, 102.0000, 185.0000, 103.0000</polygon>
+			<polygon>165.0000, 111.0000, 168.0000, 105.0000, 182.0000, 106.0000</polygon>
+			<polygon>165.0000, 96.0000, 185.0000, 103.0000, 168.0000, 102.0000</polygon>
+		</fixture>
+		<fixture>
+			<density>0.9</density>
+			<friction>0.5</friction>
+			<restitution>0.19999999999999998</restitution>
+			<filter_category_bits>1</filter_category_bits>
+			<filter_mask_bits>65535</filter_mask_bits>
+			<filter_group_index>0</filter_group_index>
+			<polygon>12.0000, 110.0000, 25.0000, 97.0000, 27.0000, 98.0000, 32.0000, 109.0000, 29.0000, 110.0000</polygon>
+			<polygon>14.0000, 104.0000, 15.0000, 102.0000, 25.0000, 97.0000, 17.0000, 105.0000</polygon>
+			<polygon>11.0000, 97.0000, 25.0000, 97.0000, 15.0000, 102.0000</polygon>
+			<polygon>31.0000, 97.0000, 32.0000, 99.0000, 27.0000, 98.0000, 28.0000, 97.0000</polygon>
+			<polygon>39.0000, 97.0000, 43.0000, 101.0000, 32.0000, 99.0000, 33.0000, 97.0000</polygon>
+			<polygon>39.0000, 110.0000, 33.0000, 110.0000, 32.0000, 109.0000, 27.0000, 98.0000, 44.0000, 106.0000</polygon>
+			<polygon>54.0000, 100.0000, 56.0000, 102.0000, 57.0000, 105.0000, 43.0000, 101.0000, 45.0000, 100.0000</polygon>
+			<polygon>44.0000, 106.0000, 27.0000, 98.0000, 32.0000, 99.0000, 57.0000, 105.0000, 54.0000, 106.0000</polygon>
+			<polygon>169.0000, 105.0000, 57.0000, 105.0000, 56.0000, 102.0000, 169.0000, 102.0000</polygon>
+			<polygon>43.0000, 101.0000, 57.0000, 105.0000, 32.0000, 99.0000</polygon>
+		</fixture>
+	</body>
+
+	<body name="map">
+		<linear_damping>0</linear_damping>
+		<angular_damping>0</angular_damping>
+		<fixed_rotation/>
+		<allow_sleep/>
+		<fixture>
+			<density>2</density>
+			<friction>0.5</friction>
+			<restitution>0.30000000000000004</restitution>
+			<filter_category_bits>1</filter_category_bits>
+			<filter_mask_bits>65535</filter_mask_bits>
+			<filter_group_index>0</filter_group_index>
+			<polygon>440.0000, 800.0000, 440.0000, 110.0000, 480.0000, 0.0000, 480.0000, 800.0000</polygon>
+			<polygon>40.0000, 800.0000, 0.0000, 800.0000, 0.0000, 0.0000, 40.0000, 112.0000</polygon>
+			<polygon>40.0000, 112.0000, 0.0000, 0.0000, 41.0000, 103.0000</polygon>
+			<polygon>41.0000, 103.0000, 0.0000, 0.0000, 44.0000, 93.0000</polygon>
+			<polygon>44.0000, 93.0000, 0.0000, 0.0000, 48.0000, 84.0000</polygon>
+			<polygon>48.0000, 84.0000, 0.0000, 0.0000, 53.0000, 75.0000</polygon>
+			<polygon>53.0000, 75.0000, 0.0000, 0.0000, 60.0000, 66.0000</polygon>
+			<polygon>60.0000, 66.0000, 0.0000, 0.0000, 67.0000, 59.0000</polygon>
+			<polygon>67.0000, 59.0000, 0.0000, 0.0000, 74.0000, 54.0000</polygon>
+			<polygon>74.0000, 54.0000, 0.0000, 0.0000, 80.0000, 50.0000</polygon>
+			<polygon>80.0000, 50.0000, 0.0000, 0.0000, 88.0000, 46.0000</polygon>
+			<polygon>88.0000, 46.0000, 0.0000, 0.0000, 99.0000, 42.0000</polygon>
+			<polygon>99.0000, 42.0000, 0.0000, 0.0000, 110.0000, 40.0000</polygon>
+			<polygon>0.0000, 0.0000, 480.0000, 0.0000, 371.0000, 40.0000, 110.0000, 40.0000</polygon>
+			<polygon>371.0000, 40.0000, 480.0000, 0.0000, 381.0000, 42.0000</polygon>
+			<polygon>381.0000, 42.0000, 480.0000, 0.0000, 390.0000, 45.0000</polygon>
+			<polygon>390.0000, 45.0000, 480.0000, 0.0000, 399.0000, 49.0000</polygon>
+			<polygon>399.0000, 49.0000, 480.0000, 0.0000, 408.0000, 55.0000</polygon>
+			<polygon>408.0000, 55.0000, 480.0000, 0.0000, 416.0000, 62.0000</polygon>
+			<polygon>416.0000, 62.0000, 480.0000, 0.0000, 424.0000, 71.0000</polygon>
+			<polygon>424.0000, 71.0000, 480.0000, 0.0000, 430.0000, 81.0000</polygon>
+			<polygon>430.0000, 81.0000, 480.0000, 0.0000, 435.0000, 91.0000</polygon>
+			<polygon>435.0000, 91.0000, 480.0000, 0.0000, 438.0000, 100.0000</polygon>
+			<polygon>438.0000, 100.0000, 480.0000, 0.0000, 440.0000, 110.0000</polygon>
+		</fixture>
+	</body>
+
+	<body name="platformL">
+		<linear_damping>0</linear_damping>
+		<angular_damping>0</angular_damping>
+		<fixed_rotation/>
+		<allow_sleep/>
+		<fixture>
+			<density>2</density>
+			<friction>0.5</friction>
+			<restitution>0.30000000000000004</restitution>
+			<filter_category_bits>1</filter_category_bits>
+			<filter_mask_bits>65535</filter_mask_bits>
+			<filter_group_index>0</filter_group_index>
+			<polygon>250.0000, 80.0000, 37.0000, 80.0000, 33.0000, 40.0000, 250.0000, 40.0000</polygon>
+			<polygon>37.0000, 80.0000, 30.0000, 81.0000, 26.0000, 38.0000, 33.0000, 40.0000</polygon>
+			<polygon>30.0000, 81.0000, 23.0000, 83.0000, 20.0000, 35.0000, 26.0000, 38.0000</polygon>
+			<polygon>23.0000, 83.0000, 17.0000, 87.0000, 15.0000, 32.0000, 20.0000, 35.0000</polygon>
+			<polygon>17.0000, 87.0000, 12.0000, 91.0000, 10.0000, 27.0000, 15.0000, 32.0000</polygon>
+			<polygon>12.0000, 91.0000, 7.0000, 96.0000, 6.0000, 22.0000, 10.0000, 27.0000</polygon>
+			<polygon>7.0000, 96.0000, 4.0000, 101.0000, 3.0000, 16.0000, 6.0000, 22.0000</polygon>
+			<polygon>4.0000, 101.0000, 2.0000, 107.0000, 1.0000, 10.0000, 3.0000, 16.0000</polygon>
+			<polygon>2.0000, 107.0000, 1.0000, 112.0000, 1.0000, 10.0000</polygon>
+			<polygon>0.0000, 1.0000, 1.0000, 10.0000, 1.0000, 112.0000, 0.0000, 120.0000</polygon>
+		</fixture>
+	</body>
+
+	<body name="platformR">
+		<linear_damping>0</linear_damping>
+		<angular_damping>0</angular_damping>
+		<fixed_rotation/>
+		<allow_sleep/>
+		<fixture>
+			<density>2</density>
+			<friction>0.5</friction>
+			<restitution>0.30000000000000004</restitution>
+			<filter_category_bits>1</filter_category_bits>
+			<filter_mask_bits>65535</filter_mask_bits>
+			<filter_group_index>0</filter_group_index>
+			<polygon>0.0000, 80.0000, 0.0000, 40.0000, 217.0000, 40.0000, 214.0000, 80.0000</polygon>
+			<polygon>217.0000, 40.0000, 224.0000, 38.0000, 220.0000, 81.0000, 214.0000, 80.0000</polygon>
+			<polygon>220.0000, 81.0000, 224.0000, 38.0000, 230.0000, 35.0000, 226.0000, 83.0000</polygon>
+			<polygon>230.0000, 35.0000, 235.0000, 32.0000, 230.0000, 85.0000, 226.0000, 83.0000</polygon>
+			<polygon>230.0000, 85.0000, 235.0000, 32.0000, 239.0000, 28.0000, 236.0000, 89.0000</polygon>
+			<polygon>239.0000, 28.0000, 243.0000, 23.0000, 239.0000, 92.0000, 236.0000, 89.0000</polygon>
+			<polygon>239.0000, 92.0000, 243.0000, 23.0000, 243.0000, 97.0000</polygon>
+			<polygon>243.0000, 97.0000, 243.0000, 23.0000, 246.0000, 18.0000, 246.6197, 103.0986</polygon>
+			<polygon>246.6197, 103.0986, 246.0000, 18.0000, 248.0000, 13.0000, 249.0000, 111.0000</polygon>
+			<polygon>248.0000, 13.0000, 250.0000, 1.0000, 250.0000, 119.0000, 249.0000, 111.0000</polygon>
+		</fixture>
+	</body>
+
+	<body name="mapLR">
+		<linear_damping>0</linear_damping>
+		<angular_damping>0</angular_damping>
+		<fixed_rotation/>
+		<allow_sleep/>
+		<fixture>
+			<density>2</density>
+			<friction>0.5</friction>
+			<restitution>0.30000000000000004</restitution>
+			<filter_category_bits>1</filter_category_bits>
+			<filter_mask_bits>65535</filter_mask_bits>
+			<filter_group_index>0</filter_group_index>
+			<polygon>40.0000, 0.0000, 40.0000, 800.0000, 0.0000, 800.0000, 0.0000, 0.0000</polygon>
+		</fixture>
+		<fixture>
+			<density>2</density>
+			<friction>0.5</friction>
+			<restitution>0.30000000000000004</restitution>
+			<filter_category_bits>1</filter_category_bits>
+			<filter_mask_bits>65535</filter_mask_bits>
+			<filter_group_index>0</filter_group_index>
+			<polygon>480.0000, 0.0000, 480.0000, 800.0000, 440.0000, 800.0000, 440.0000, 0.0000</polygon>
+		</fixture>
+	</body>
+
+	<metadata>
+		<format>1</format>
+		<ptm_ratio>32</ptm_ratio>
+	</metadata>
+
+</bodydef>
+
