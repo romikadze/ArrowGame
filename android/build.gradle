@@ -89,4 +89,10 @@ task run(type: Exec) {
     commandLine "$adb", 'shell', 'am', 'start', '-n', 'flyingarrow.game/flyingarrow.game.AndroidLauncher'
 }
 
+dependencies {
+    implementation files('src\\flyingarrow\\game\\libs\\gdx-sqlite-android.jar')
+}
+
+
+
 eclipse.project.name = appName + "-android"

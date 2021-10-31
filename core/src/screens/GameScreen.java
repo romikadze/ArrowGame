@@ -44,16 +44,9 @@ public class GameScreen implements Screen {
     ExtendViewport viewport;
 
     PhysicsShapeCache physicsShapeCache;
-    MainClass mainClass;
     Ground ground;
     Arrow arrow;
 
-
-    public GameScreen(final MainClass mainClass) {
-
-        this.mainClass = mainClass;
-
-    }
 
     @Override
     public void show() {
@@ -109,7 +102,7 @@ public class GameScreen implements Screen {
 
     public synchronized void lose() {
         if (camera.position.y / METERS_TO_PIXELS > arrow.getArrowBody().getPosition().y + 85 * SCREEN_SCALE + arrow.getCurrentArrowHeight()) {
-            mainClass.setScreen(new MenuScreen(mainClass));
+            MainClass.mainClass.setScreen(new MenuScreen());
             backgroundMusic.stop();
         }
     }

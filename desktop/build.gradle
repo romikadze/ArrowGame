@@ -33,6 +33,10 @@ task dist(type: Jar) {
     with jar
 }
 
+dependencies {
+    implementation files('src\\flyingarrow\\game\\desktop\\libs\\gdx-sqlite-desktop.jar')
+}
+
 
 dist.dependsOn classes
 

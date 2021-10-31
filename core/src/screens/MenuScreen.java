@@ -14,15 +14,11 @@ import flyingarrow.game.MainClass;
 
 public class MenuScreen implements Screen {
 
-    MainClass mainClass;
     Sprite menuScreen;
     SpriteBatch batch;
     OrthographicCamera camera;
     Texture menuScreenTexture;
 
-    public MenuScreen(final MainClass mainClass) {
-        this.mainClass = mainClass;
-    }
 
     @Override
     public void show() {
@@ -57,7 +53,7 @@ public class MenuScreen implements Screen {
             camera.unproject(pos);
             if (pos.x >= 330 && pos.x <= 630 && pos.y >= 890 && pos.y <= 970) {
                 dispose();
-                mainClass.setScreen(new GameScreen(mainClass));
+                MainClass.mainClass.setScreen(new GameScreen());
             } else if (pos.x >= 330 && pos.x <= 630 && pos.y >= 680 && pos.y <= 760) {
                 dispose();
                 Gdx.app.exit();
@@ -88,7 +84,6 @@ public class MenuScreen implements Screen {
     @Override
     public void dispose() {
         batch.dispose();
-        mainClass.dispose();
         menuScreenTexture.dispose();
     }
 }
