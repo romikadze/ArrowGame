@@ -12,12 +12,11 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector3;
 
 
-import DB.DatabaseTest;
-import Toast.Toast;
+import DB.MyDatabase;
 import flyingarrow.game.MainClass;
 
 
-public class LoginPage implements Screen {
+public class LoginScreen implements Screen {
 
     private SpriteBatch batch;
     private OrthographicCamera camera;
@@ -27,9 +26,8 @@ public class LoginPage implements Screen {
     private String password = "";
     private boolean isAuthorizationSuccessful = false;
     private boolean reset = false;
-    private DatabaseTest db;
+    private MyDatabase db;
     BitmapFont font;
-    Toast toast;
 
 
     @Override
@@ -43,10 +41,8 @@ public class LoginPage implements Screen {
         loginScreenSprite.setPosition(0, 0);
 
         font = new BitmapFont();
-        Toast.ToastFactory toastFactory = new Toast.ToastFactory.Builder().font(font).build();
-        toast = toastFactory.create("Login already taken", Toast.Length.LONG);
 
-        db = new DatabaseTest();
+        db = new MyDatabase();
     }
 
     private void authorize(boolean isLogin) {
@@ -164,7 +160,6 @@ public class LoginPage implements Screen {
             MainClass.mainClass.setScreen(new MenuScreen());
         }
 
-        toast.render(Gdx.graphics.getDeltaTime());
 
         batch.begin();
 

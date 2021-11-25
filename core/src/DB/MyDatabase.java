@@ -6,9 +6,9 @@ import com.badlogic.gdx.sql.DatabaseCursor;
 import com.badlogic.gdx.sql.DatabaseFactory;
 import com.badlogic.gdx.sql.SQLiteGdxException;
 
-public class DatabaseTest {
+public class MyDatabase {
 
-    Database dbHandler;
+    com.badlogic.gdx.sql.Database dbHandler;
 
     public static final String TABLE_NAME = "users";
     public static final String COLUMN_ID = "_id";
@@ -24,7 +24,7 @@ public class DatabaseTest {
             + " integer primary key autoincrement, " + COLUMN_LOGIN
             + " text not null, " + COLUMN_PASSWORD + " text not null);";
 
-    public DatabaseTest() {
+    public MyDatabase() {
         Gdx.app.log("TAG", "creation started");
         dbHandler = DatabaseFactory.getNewDatabase(DATABASE_NAME,
                 DATABASE_VERSION, DATABASE_CREATE, null);

@@ -52,10 +52,8 @@ public class MenuScreen implements Screen {
             pos.set(Gdx.input.getX(), Gdx.input.getY(), 0);
             camera.unproject(pos);
             if (pos.x >= 330 && pos.x <= 630 && pos.y >= 890 && pos.y <= 970) {
-                dispose();
                 MainClass.mainClass.setScreen(new GameScreen());
             } else if (pos.x >= 330 && pos.x <= 630 && pos.y >= 680 && pos.y <= 760) {
-                dispose();
                 Gdx.app.exit();
             }
         }

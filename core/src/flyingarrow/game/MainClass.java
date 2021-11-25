@@ -2,8 +2,7 @@ package flyingarrow.game;
 
 import com.badlogic.gdx.Game;
 
-import screens.LoginPage;
-import screens.MenuScreen;
+import screens.LoginScreen;
 
 public class MainClass extends Game {
 
@@ -11,7 +10,7 @@ public class MainClass extends Game {
     @Override
     public void create() {
         mainClass = this;
-        setScreen(new LoginPage());
+        setScreen(new LoginScreen());
 
     }
 
